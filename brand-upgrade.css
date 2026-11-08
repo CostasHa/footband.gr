@@ -1,0 +1,45 @@
+/* Footband 2026 project refinements layered over the shared system. */
+.product-card:nth-child(4n+2) .product-picture{background:#eef5f1}
+.product-card:nth-child(4n+3) .product-picture{background:#f2eee8}
+.product-card:nth-child(4n+4) .product-picture{background:#e5f0ee}
+.sku-warning{margin-top:7px;color:#7b452d;font-size:11px}
+.add-product:disabled{cursor:not-allowed;background:#f5eadb;color:#6c442b;border-color:#d8bfa5}
+input[aria-invalid=true],select[aria-invalid=true],textarea[aria-invalid=true]{border-color:#9a3b30}
+@media(min-width:761px){.product-card:first-child{grid-column:span 2}.product-card:first-child .product-picture img{height:340px}.product-card:first-child .product-content{display:grid;grid-template-columns:1fr auto;gap:8px 20px}.product-card:first-child .product-meta,.product-card:first-child h3{grid-column:1}.product-card:first-child .product-bottom{grid-column:2;grid-row:1/3;align-self:end;flex-direction:column;align-items:flex-end;margin:0}}
+@media(max-width:760px){input,select,textarea{font-size:16px}.preview-bar strong{font-size:9px}}
+
+/* Buyer-facing hero: tighter product crops and less empty image space. */
+.hero{min-height:610px}
+.hero-audience{display:flex;flex-wrap:wrap;gap:8px;margin-top:25px}
+.hero-audience span{padding:7px 10px;border:1px solid var(--line);font-size:10px;color:var(--muted)}
+.hero-stage{min-height:470px}
+.hero-stage:before{width:430px;height:430px;top:7%}
+.stage-card{overflow:hidden;background:transparent;border:0;box-shadow:none}
+.stage-card img{transform:scale(1.5);transform-origin:center 46%}
+.stage-card-main{height:330px;top:65px;padding:0 0 62px}
+.stage-card-main p{left:0;bottom:0;z-index:2;width:100%;min-height:62px;padding:13px 18px;background:#fff}
+.stage-card-side{height:190px;bottom:25px;padding:0}
+.stage-card-side img{transform:scale(1.65)}
+.stage-code{z-index:3}
+.stage-caption{left:145px}
+@media(max-width:760px){.hero-stage{min-height:360px}.hero-stage:before{width:330px;height:330px}.stage-card-main{width:64%;height:260px;top:54px;right:6%;padding-bottom:56px}.stage-card-main p{min-height:56px;font-size:15px}.stage-card-side{width:35%;height:145px;left:5%;bottom:17px}.stage-seal{width:72px;height:72px;right:2%;bottom:9px}.stage-seal span{font-size:28px}}
+@media(max-width:760px){.stage-caption{left:76px}}
+
+/* Range-led hero: three clear product families without overlapping labels. */
+.hero-stage{min-height:500px;border-radius:180px 4px 4px 4px;background:#deeeea}
+.hero-stage:before{display:none}
+.stage-caption{left:32px;right:32px;top:24px;z-index:3}
+.hero-products{position:absolute;inset:58px 24px 24px;display:grid;grid-template-columns:1.22fr .78fr;grid-template-rows:1fr 1fr;gap:12px}
+.hero-product{position:relative;min-width:0;overflow:hidden;background:#f7faf7;border:1px solid #c7dcd5}
+.hero-product-primary{grid-row:1/3;background:#eef5f1}
+.hero-product img{width:100%;height:100%;padding:22px 18px 52px;object-fit:contain;mix-blend-mode:multiply;transform:scale(1.13)}
+.hero-product-primary img{padding:40px 18px 66px;transform:scale(1.24)}
+.hero-product .stage-code{left:14px;top:12px}
+.hero-product>div{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:10px 13px 11px;background:#fffffff2;border-top:1px solid #dce7e2}
+.hero-product small{display:block;margin-bottom:2px;color:var(--teal);font:8px/1.2 monospace;letter-spacing:.1em}
+.hero-product strong{display:block;font-size:12px;line-height:1.25}
+.hero-product-primary strong{font-size:16px}
+.product-detail{margin-top:7px;min-height:42px;color:var(--muted);font-size:11px;line-height:1.45}
+@media(min-width:761px){.product-card:first-child .product-detail{grid-column:1}.product-card:first-child .product-bottom{grid-row:1/4}}
+@media(max-width:760px){.hero-stage{min-height:420px;border-radius:120px 4px 4px 4px}.stage-caption{left:25px;right:20px}.hero-products{inset:56px 14px 14px;grid-template-columns:1.15fr .85fr;gap:8px}.hero-product img{padding:15px 8px 48px}.hero-product-primary img{padding:34px 10px 64px}.hero-product>div{padding:8px 9px}.hero-product strong{font-size:10px}.hero-product-primary strong{font-size:13px}.product-detail{min-height:58px;font-size:10px}}
+@media(max-width:560px){.product-grid{grid-template-columns:1fr}.product-picture img{height:230px}.product-content h3,.product-detail{min-height:0}.product-detail{font-size:12px}.product-bottom{flex-direction:row}}
