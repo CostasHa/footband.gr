@@ -21,4 +21,5 @@ dialog{width:min(680px,calc(100% - 30px));max-height:90vh;overflow:auto;padding:
 @media(max-width:380px){.shell{padding-inline:16px}.hero-stage{min-height:400px}.stage-card-main{height:285px}.stage-card-side{height:155px;bottom:18px}.stage-seal{right:1%;bottom:8px}.product-picture img{height:145px}.filters{gap:2px}.filter{font-size:11px;padding:8px 9px}.pack{transform:scale(.93);transform-origin:top left;width:107%;margin-bottom:-38px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
 .range-cta{margin-top:30px;background:#89d6c5;border-color:#89d6c5;color:var(--deep)}.range-cta:hover{background:#b0e5d8}
+.contact-mail{display:inline-flex;margin-top:24px}
 @media(max-width:760px){.choice-guide{padding-top:70px;padding-bottom:70px}.choice-guide-heading{grid-template-columns:1fr;gap:24px;margin-bottom:30px}.choice-paths{grid-template-columns:1fr}.choice-paths article{padding:24px 20px;border-right:0;border-bottom:1px solid var(--line)}.choice-paths article:last-child{border-bottom:0}.choice-paths dl div{grid-template-columns:82px 1fr}}
