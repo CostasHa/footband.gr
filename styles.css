@@ -22,4 +22,4 @@ dialog{width:min(680px,calc(100% - 30px));max-height:90vh;overflow:auto;padding:
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
 .range-cta{margin-top:30px;background:#89d6c5;border-color:#89d6c5;color:var(--deep)}.range-cta:hover{background:#b0e5d8}
 .contact-mail{display:inline-flex;margin-top:24px}
-@media(max-width:760px){.choice-guide{padding-top:70px;padding-bottom:70px}.choice-guide-heading{grid-template-columns:1fr;gap:24px;margin-bottom:30px}.choice-paths{grid-template-columns:1fr}.choice-paths article{padding:24px 20px;border-right:0;border-bottom:1px solid var(--line)}.choice-paths article:last-child{border-bottom:0}.choice-paths dl div{grid-template-columns:82px 1fr}}
+@media(max-width:900px){.choice-guide{padding-top:70px;padding-bottom:70px}.choice-guide-heading{grid-template-columns:1fr;gap:24px;margin-bottom:30px}.choice-paths{grid-template-columns:1fr}.choice-paths article{padding:24px 20px;border-right:0;border-bottom:1px solid var(--line)}.choice-paths article:last-child{border-bottom:0}.choice-paths dl div{grid-template-columns:82px 1fr}}
